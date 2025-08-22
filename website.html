@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to My WiFi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 450px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #0073e6;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #0f0e0e;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #00e67b;
+      color: rgb(4, 93, 118);
+    }
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      text-align: center;
+    }
+    input[type="submit"] {
+      background: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background: #005bb5;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #444;
+      font-style: inherit;
+    }
+    <form action="$(link-login-only)" method="post" style="text-align:center;">
+  <input type="hidden" name="dst" value="$(link-orig)" />
+  <input type="hidden" name="popup" value="true" />
+
+  <input type="text" name="username" placeholder="Enter Voucher" 
+         style="width:80%; text-align:center; margin:10px auto; display:block;" required><br>
+
+  <input type="submit" value="SUBMIT" 
+         style="background:#00e67b; color:rgb(4, 93, 118); padding:10px 20px; 
+         border:none; border-radius:6px; cursor:pointer; font-size:16px; font-weight:bold;">
+</form>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>WELCOME</h2>
+    <p><strong></strong> ZELTEL</p>
+
+    <h3>Internet Packages</h3>
+    <table>
+      <tr><th>Duration</th><th>Price</th></tr>
+      <tr><td>DAILY</td><td>UGX 1,000</td></tr>
+      <tr><td>WEEKLY</td><td>UGX 5,000</td></tr>
+      <tr><td>MONTHLY</td><td>UGX 20,000</td></tr>
+    </table>
+
+    <form action="$(link-login-only)" method="post">
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+      <input type="text" name="username" placeholder="Enter Voucher" required><br>
+      <input type="submit" value="SUBMIT">
+    </form>
+
+    <p>Contact us: 0703075706</p>
+  </div>
+</body>
+</html>
